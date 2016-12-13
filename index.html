@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<script src="node_modules/angular/angular.js"></script>
-	<script src="loginController.js"></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="loginController.js"></script>
 </head>
 <body>
-	<div class="container" ng-app="loginModule" ng-controller="loginCtrl">
-		<fieldset>
-			<legend>Login</legend>
-			<form class="form-horizontal">
-	            <div class="form-group">
-	                <label class="control-label col-sm-2" for="username">Username:</label>
-	                <div class="col-sm-10">
-	                    <input type="text" placeholder="Enter your username" id="username" ng-model="username"/>
-	                </div>
-	            </div>
-	            <div class="form-group">
-	                <label class="control-label col-sm-2" for="password">Password:</label>
-	                <div class="col-sm-10">
-	                    <input type="password" placeholder="Enter your password" id="password" ng-model="password"/>
-	                </div>
-	            </div>
-	            <div class="form-group">
-	                <label class="control-label col-sm-2" for="location">Location:</label>
-	                <div class="col-sm-10">
-	                    <select id="location">
-	                        <option value="1">Select Location</option>
-	                        <option value="2">Registraction Desk</option>
-	                        <option value="3">OPD-1</option>
-	                        <option value="4">General Ward</option>
-	                        <option value="5">Labour Ward</option>
-	                    </select><br>
-	                </div>
-	            </div>
-	            <div class="form-group">
-	                <label class="control-label col-sm-2" for="loginBtn"></label>
-	                <div class="col-sm-10">
-	                    <button class="btn btn-default" id="loginBtn" ng-click="loginHandler()">Login</button>
-	                </div>
-	            </div>
-	        </form>
-	        <h4>{{result}}</h4>
-		</fieldset>
-    </div>
+<div class="login" ng-app="loginModule" ng-controller="loginCtrl">
+    <header>
+        <p>Login</p>
+    </header>
+    <p>{{result}}</p>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="username">Username:</label>
+            <div class="col-sm-10">
+                <input type="text" placeholder="Enter your username" id="username" ng-model="username"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="password">Password:</label>
+            <div class="col-sm-10">
+                <input type="password" placeholder="Enter your password" id="password" ng-model="password"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="location">Location:</label>
+            <div class="col-sm-10">
+                <select id="location">
+                    <option value="1">Select Location</option>
+                    <option value="2">Registraction Desk</option>
+                    <option value="3">OPD-1</option>
+                    <option value="4">General Ward</option>
+                    <option value="5">Labour Ward</option>
+                </select><br>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="loginBtn"></label>
+            <div class="col-sm-10">
+                <button class="btn btn-default" id="loginBtn" ng-click="loginHandler()">Login</button>
+            </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>
