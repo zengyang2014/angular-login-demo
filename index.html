@@ -10,7 +10,11 @@
 <body>
 <div class="login" ng-app="loginModule" ng-controller="loginCtrl">
     <header>
-        <p>Login</p>
+        <div id="loginMsg">Login</div>
+        Select Locale
+        <select>
+            <option ng-repeat="lan in languages">{{lan}}</option>
+        </select>
     </header>
     <form>
 `		<p id="msg" class="hint-msg">{{result}}</p>

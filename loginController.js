@@ -11,6 +11,10 @@ var locationSel = [
 	'Labour Ward'
 ];
 
+var languagesSel = [
+	'en','es','fr','it','pt'
+];
+
 app.controller('loginCtrl', ($scope) => {
 	$scope.loginHandler = () => {
 		if ($scope.username == initUsername && $scope.password == initPassword) {
@@ -20,4 +24,5 @@ app.controller('loginCtrl', ($scope) => {
 		}
 	}
 	$scope.locations = locationSel;
+	$scope.languages = languagesSel;
 });
