@@ -1,1 +1,1 @@
-This is a trainig of angularJS.
+This is a training of angularJS.
