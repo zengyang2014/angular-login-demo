@@ -11,6 +11,8 @@
 }
 
 .login form {
+    padding:20px;
+    border:1px solid lightgray;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 10px 10px -10px #666;
 }
@@ -24,4 +26,12 @@
     line-height: 52px;
     padding: 0px 20px;
     background: darkcyan;
+}
+
+.login .login-body {
+    background: #FFFFFF;
+    border: 1px solid #ccc;
+    padding-bottom: 10px;
+    border-radius: 0 0 10px 10px;
+    padding-top: 10px;
 }
