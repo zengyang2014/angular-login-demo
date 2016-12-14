@@ -8,7 +8,7 @@ app.controller('loginCtrl', ($scope) => {
 		if($scope.username == initUsername && $scope.password == initPassword) {
 			$scope.result = 'Login Success';
 		} else {
-			$scope.result = 'Login Fail';
+			$scope.result = 'You are not authenticated or your session expired. Please login.';
 		}
 	}
 });
