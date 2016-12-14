@@ -13,18 +13,14 @@
         <p>Login</p>
     </header>
     <form>
-		<p style="color: red" class="hint-msg">{{result}}</p>
+`		<p id="msg" class="hint-msg">{{result}}</p>
         Username
         <input type="text" ng-model="username"/><br>
         Password
         <input type="password" ng-model="password"/><br>
         Location
-        <select ng-model="selection">
-            <option value="1">Select Location</option>
-            <option value="2">Registraction Desk</option>
-            <option value="3">OPD-1</option>
-            <option value="4">General Ward</option>
-            <option value="5">Labour Ward</option>
+        <select>
+            <option ng-repeat="location in locations">{{location}}</option>
         </select><br>
         <button ng-click="loginHandler()">Login</button>
     </form>
