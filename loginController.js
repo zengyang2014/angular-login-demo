@@ -2,6 +2,10 @@ var app = angular.module('loginModule', []);
 
 app.controller('loginCtrl', ($scope) => {
 	$scope.loginHandler = () => {
+
+		console.log($scope.username);
+		console.log($scope.password);
+
 		if ($scope.username == 'admin' && $scope.password == '123456') {
 			$scope.result = 'Login Success';
 		} else {
