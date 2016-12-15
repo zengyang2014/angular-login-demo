@@ -10,13 +10,6 @@
     max-width: 500px;
 }
 
-.login form {
-    padding:20px;
-    border:1px solid lightgray;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 10px 10px -10px #666;
-}
-
 .login header {
     border-radius: 10px 10px 0 0;
     box-sizing: border-box;
@@ -30,17 +23,6 @@
     padding-right: 10px;
 }
 
-.login .login-body {
-    background: #FFFFFF;
-    padding-bottom: 10px;
-    border-radius: 0 0 10px 10px;
-    padding-top: 10px;
-}
-
-#msg {
-    color: red;
-}
-
 .login .login-header .msg {
     font-weight: bold;
     font-size: 24px;
@@ -52,6 +34,24 @@
     font-size: 14px;
 }
 
+.login form {
+    padding:20px;
+    border:1px solid lightgray;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 10px -10px #666;
+}
+
+.login .login-body {
+    background: #FFFFFF;
+    padding-bottom: 10px;
+    border-radius: 0 0 10px 10px;
+    padding-top: 10px;
+}
+
 .white {
     color: white;
+}
+
+.red {
+    color: red;
 }
