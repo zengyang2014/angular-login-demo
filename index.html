@@ -21,12 +21,12 @@
         </div>
     </header>
     <form>
-		<p id="msg" class="hint-msg">{{result}}</p>
-		Username <span class="hint-msg">*</span>
+		<p id="msg" class="red">{{result}}</p>
+		Username <span class="red">*</span>
         <input type="text" ng-model="username"/><br>
-        Password <span class="hint-msg">*</span>
+        Password <span class="red">*</span>
         <input type="password" ng-model="password"/><br>
-		Location <span class="hint-msg">*</span>
+		Location <span class="red">*</span>
         <select>
             <option ng-repeat="location in locations">{{location}}</option>
         </select><br>

@@ -5,7 +5,7 @@ var initPassword = '123456';
 
 var locationSel = [
 	'Select Location',
-	'Registraction Desk',
+	'Registration Desk',
 	'OPD-1',
 	'General Ward',
 	'Labour Ward'
