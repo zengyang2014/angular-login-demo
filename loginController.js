@@ -1,28 +1,21 @@
 var app = angular.module('loginModule', []);
 
-var initUsername = 'admin';
-var initPassword = '123456';
-
-var locationSel = [
-	'Select Location',
-	'Registration Desk',
-	'OPD-1',
-	'General Ward',
-	'Labour Ward'
-];
-
-var languagesSel = [
-	'en','es','fr','it','pt'
-];
-
 app.controller('loginCtrl', ($scope) => {
 	$scope.loginHandler = () => {
-		if ($scope.username == initUsername && $scope.password == initPassword) {
+		if ($scope.username == 'admin' && $scope.password == '123456') {
 			$scope.result = 'Login Success';
 		} else {
 			$scope.result = 'You are not authenticated or your session expired. Please login.';
 		}
-	}
-	$scope.locations = locationSel;
-	$scope.languages = languagesSel;
+	};
+	$scope.locations = [
+		'Select Location',
+		'Registration Desk',
+		'OPD-1',
+		'General Ward',
+		'Labour Ward'
+	];
+	$scope.languages = [
+		'en','es','fr','it','pt'
+	];
 });
