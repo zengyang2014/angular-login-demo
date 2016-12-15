@@ -9,13 +9,12 @@
     font-size: 0.865em;
     max-width: 500px;
 }
-
 .login header {
     border-radius: 10px 10px 0 0;
     box-sizing: border-box;
     line-height: 52px;
     padding: 0px 20px;
-    background: darkcyan;
+background: darkcyan;
 }
 
 .login .login-header {
@@ -35,6 +34,7 @@
 }
 
 .login form {
+    text-align:center;
     padding:20px;
     border:1px solid lightgray;
     border-radius: 0 0 10px 10px;
