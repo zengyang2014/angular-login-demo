@@ -21,16 +21,18 @@
         </div>
     </header>
     <form>
-		<p id="msg" class="red">{{result}}</p>
-		Username <span class="red">*</span>
-        <input type="text" ng-model="username"/><br>
-        Password <span class="red">*</span>
-        <input type="password" ng-model="password"/><br>
-		Location <span class="red">*</span>
-        <select>
-            <option ng-repeat="location in locations">{{location}}</option>
-        </select><br>
-        <button ng-click="loginHandler()">Login</button>
+        <div class="login-body">
+            <p id="msg" class="red">{{result}}</p>
+            Username <span class="red">*</span>
+            <input type="text" ng-model="username"/><br>
+            Password <span class="red">*</span>
+            <input type="password" ng-model="password"/><br>
+            Location <span class="red">*</span>
+            <select>
+                <option ng-repeat="location in locations">{{location}}</option>
+            </select><br>
+            <button class="footer-btn" ng-click="loginHandler()">Login</button>
+        </div>
     </form>
 </div>
 </body>
