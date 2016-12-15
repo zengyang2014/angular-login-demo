@@ -10,25 +10,29 @@
 <body>
 <div class="login" ng-app="loginModule" ng-controller="loginCtrl">
     <header>
-        <div>
-            <span id="loginMsg">Login</span>
-            <span id="loginLanguage">Select Locale</span>
-            <select>
-                <option ng-repeat="lan in languages">{{lan}}</option>
-            </select>
+        <div class="login-header">
+            <span class="msg">Login</span>
+            <div class="lan">
+                <span class="white">Select Locale</span>
+                <select>
+                    <option ng-repeat="lan in languages">{{lan}}</option>
+                </select>
+            </div>
         </div>
     </header>
     <form>
-		<p id="msg" class="hint-msg">{{result}}</p>
-        Username
-        <input type="text" ng-model="username"/><br>
-        Password
-        <input type="password" ng-model="password"/><br>
-        Location
-        <select>
-            <option ng-repeat="location in locations">{{location}}</option>
-        </select><br>
-        <button ng-click="loginHandler()">Login</button>
+        <div class="login-body">
+            <p id="msg" class="hint-msg">{{result}}</p>
+            Username
+            <input type="text" ng-model="username"/><br>
+            Password
+            <input type="password" ng-model="password"/><br>
+            Location
+            <select>
+                <option ng-repeat="location in locations">{{location}}</option>
+            </select><br>
+            <button ng-click="loginHandler()">Login</button>
+        </div>
     </form>
 </div>
 </body>

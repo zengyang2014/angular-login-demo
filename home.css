@@ -26,9 +26,13 @@
     background: darkcyan;
 }
 
+.login .login-header {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .login .login-body {
     background: #FFFFFF;
-    border: 1px solid #ccc;
     padding-bottom: 10px;
     border-radius: 0 0 10px 10px;
     padding-top: 10px;
@@ -38,13 +42,16 @@
     color: red;
 }
 
-#loginMsg {
-    color: #FFFFFF;
+.login .login-header .msg {
     font-size: 24px;
+    color: #FFFFFF;
 }
 
-#loginLanguage {
-    color: #FFFFFF;
-    font-size: 10px;
-    margin-left: 280px;
+.login .login-header .lan {
+    float: right;
+    font-size: 14px;
+}
+
+.white {
+    color: white;
 }
