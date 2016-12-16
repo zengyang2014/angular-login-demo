@@ -42,7 +42,7 @@
 
 .login .login-body {
     background: #FFFFFF;
-    padding-bottom: 30px;
+    padding-bottom: 160px;
     border-radius: 0 0 10px 10px;
     padding-top: 10px;;
 }
@@ -67,4 +67,8 @@
 
 .red {
     color: red;
+}
+
+.space-a {
+    margin-bottom: 10px;
 }
