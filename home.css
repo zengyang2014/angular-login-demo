@@ -56,6 +56,11 @@
     width: 100%;
 }
 
+.text-style {
+    font: 13px OpenSans,Arial,sans-serif;
+    color: cadetblue;
+}
+
 .white {
     color: white;
 }
