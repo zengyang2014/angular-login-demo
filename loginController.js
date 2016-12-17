@@ -1,7 +1,7 @@
 var app = angular.module('loginModule', []);
 
 app.controller('loginCtrl', ($scope) => {
-	$scope.loginHandler = () => {
+	$scope.login = () => {
 		if ($scope.currentLocation == 'Select Location') {
 			$scope.result = 'Please select an item in the list'
 		} else if ($scope.username != 'admin' || $scope.password != '123456') {
