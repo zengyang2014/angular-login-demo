@@ -22,4 +22,6 @@ app.controller('loginCtrl', ($scope) => {
 	$scope.languages = [
 		'en','es','fr','it','pt'
 	];
+	$scope.usernamePlaceholder = 'Enter your username';
+	$scope.passwordPlaceholder = 'Enter your password';
 });
