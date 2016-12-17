@@ -4,6 +4,8 @@
     <title>Login</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="home.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/js/tooltip.js"></script>
     <script src="node_modules/angular/angular.js"></script>
     <script src="loginController.js"></script>
 </head>
@@ -46,7 +48,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button ng-click="loginHandler()" class="btn btn-default footer-btn">Login</button>
+                        <button ng-click="loginHandler()" class="btn btn-default footer-btn" tooltip="You clicked me!" tooltip-trigger="click">Login</button>
                     </div>
                 </div>
             </form>
