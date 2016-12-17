@@ -2,14 +2,12 @@ var app = angular.module('loginModule', []);
 
 app.controller('loginCtrl', ($scope) => {
 	$scope.loginHandler = () => {
-
-		console.log($scope.username);
-		console.log($scope.password);
-
-		if ($scope.username == 'admin' && $scope.password == '123456') {
-			$scope.result = 'Login Success';
-		} else {
+		if ($scope.currentLocation == 'Select Location') {
+			$scope.result = 'Please select an item in the list'
+		} else if ($scope.username != 'admin' || $scope.password != '123456') {
 			$scope.result = 'You are not authenticated or your session expired. Please login.';
+		} else {
+			$scope.result = 'Login Success';
 		}
 	};
 	$scope.locations = [
@@ -24,4 +22,5 @@ app.controller('loginCtrl', ($scope) => {
 	];
 	$scope.usernamePlaceholder = 'Enter your username';
 	$scope.passwordPlaceholder = 'Enter your password';
+	$scope.currentLocation = 'Registration Desk';
 });
