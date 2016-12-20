@@ -1,14 +1,23 @@
-var app = angular.module('loginModule', []);
+var app = angular.module('loginModule', ['ngResource']);
 
-app.controller('loginCtrl', ($scope) => {
+app.controller('loginCtrl', ($scope, $resource) => {
 	$scope.login = () => {
 		if ($scope.currentLocation == 'Select Location') {
 			$scope.result = 'Please select an item in the list'
-		} else if ($scope.username != 'admin' || $scope.password != '123456') {
-			$scope.result = 'You are not authenticated or your session expired. Please login.';
-		} else {
-			$scope.result = 'Login Success';
 		}
+
+		var LoginConn = $resource('http://localhost:8080/login');
+		LoginConn.save({}, {'username':$scope.username, 'password':$scope.password},
+			function(response){
+				$scope.result = 'Login Success';
+			},
+			function(response){
+				if (response.status == -1) {
+					$scope.result = 'Can\'t connect to service';
+				} else {
+					$scope.result = 'You are not authenticated or your session expired. Please login.';
+				}
+			});
 	};
 	$scope.locations = [
 		'Select Location',
